@@ -1,0 +1,159 @@
+/* Reseteo de Estilo */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuente*/
+@font-face{
+    font-family: 'Fredoka';
+    src: url('FredokaOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Amatic';
+    src: url('AmaticSC-Regular.ttf');
+    font-weight: 'normal';
+    font-style: normal;
+}
+
+
+/* Estilo Body */
+body, html{
+    /* background: #16161d; */
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 51%, rgba(134,0,43,1) 100%);
+}
+
+/*Estilo #all*/
+#all{
+  background-color: #16161d;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+
+/*Estilo #bkg*/
+#bkg{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+}
+
+
+/* Estilo div contenedor*/
+.container{
+    margin: 0 auto;
+    width: 65%;
+}
+
+/* Estilos .square */
+.square{
+    float: left;
+    width: 27%;
+    height: 0;
+    padding-bottom: 27%;
+    margin: 2%;
+    border-radius: 5%;
+    transition: 0.8s;
+}
+
+.square:hover{
+    transform: scale(1.1, 1.1);
+}
+
+/*Estilo Titulo*/
+h1{
+    font-size: clamp(40px, 5vw, 70px);
+    text-align: center;
+    padding: 1%;
+    color: white;
+    text-shadow: rgb(26, 26, 26) 0 0 1px;
+    border-radius: 15px 15px 0px 0px;
+    font-family: 'Fredoka';
+    letter-spacing: 2px;
+    font-weight: lighter;
+    transition: all 1.5s;
+}
+/*Estilo h2 que contiene span colorDisplay*/
+h2{
+    font-size: clamp(10px, 3vw, 50px);
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: 'Fredoka';
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/* Estilos message */
+
+#stripe {
+    height: 30%;
+    text-align: center;
+}
+
+#message{
+    display: inline-block;
+    font-size: clamp(9px, 1vw, 25px);
+    color: white;
+    width: 28%;
+    background: inherit;
+    font-family: 'Fredoka';
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+
+/*Boton Hard y Easy*/
+
+.selected{
+    background: #373738;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+button {
+    font-family: 'Fredoka';
+    font-size: clamp(9px, 1vw, 25px);
+    border: none;
+    outline: none;
+    height: 100%;
+    background: inherit;
+    font-weight: 200;
+    color: #505050;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 9px;
+    transition: all 0.5s;
+}
+
+button:hover{
+    border-radius: 10%;
+    text-shadow: honeydew 0 0 10px;
+    color: whitesmoke;
+    transform: scale(1.2, 1.2);
+}
+
+#dificil{
+    margin-left: 2%;
+}
+
+#reset{
+   padding-right: 2%;
+}
+
+
+
